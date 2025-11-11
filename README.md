@@ -39,12 +39,20 @@
        One-to-many. Satu alat bisa dipinjam oleh banyak member.
 
 3. Flowcode
-   
+   - user buka website lewat browser -> ngirim HTTP request ke server (xampp)
+   - **index.php** nerima request user -> cek **?page=** buat nentuin mau nampilin page apa. Ada **equipments**, **members**, atau **rentals**.
+   - **index.php** manggil file di folder **view** yg sesuai si user mau.
+   - file di folder **view** minta ke file di folder **class** kayak contohnya **equipments.php**, **members.php**, **rentals.php**.
+   - file di folder **class** ambil atau ubah data yang ada di database lewat koneksi di folder **config/config.php**.
+   - hasil query dikirim balik ke **view**.
+   - **view** nampilin hasil ke browser.
+   - user bisa nambah, edit, hapus, atau balikin alat (jalanin fungsi CRUD sesuai tombol yg diklik).
    
 4. Dokumentasi
 
 
 https://github.com/user-attachments/assets/6dba9c13-0384-4330-9f9e-8f9acb5c9e90
+
 
 
 
